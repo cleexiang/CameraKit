@@ -1,13 +1,22 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '13.0'
 
 target 'CameraKit_Example' do
   pod 'CameraKit', :path => '../'
 
   target 'CameraKit_Tests' do
     inherit! :search_paths
-
-    
   end
 end
+
+# temporary fix for this issue to suppress a ton of warnings
+# https://github.com/CocoaPods/CocoaPods/issues/7314
+post_install do |pi|
+    pi.pods_project.targets.each do |t|
+        t.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        end
+    end
+end
+

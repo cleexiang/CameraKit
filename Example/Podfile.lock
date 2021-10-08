@@ -1,0 +1,16 @@
+PODS:
+  - CameraKit (0.1.0)
+
+DEPENDENCIES:
+  - CameraKit (from `../`)
+
+EXTERNAL SOURCES:
+  CameraKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CameraKit: e062a06b349f59ce5b827a8a8d1e7ccde99dac34
+
+PODFILE CHECKSUM: d6553e88df248bea1351f2faff2ce405afad101d
+
+COCOAPODS: 1.10.1
