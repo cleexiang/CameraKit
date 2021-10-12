@@ -131,7 +131,7 @@ public class CaptureSessionManager: NSObject {
         photoOutput.capturePhoto(with: photoSettings, delegate: self)
     }
     
-    internal func changeCamera() {
+    public func changeCamera() {
         guard let currentVideoDeviceInput = self.videoDeviceInput else { return }
         let currentVideoDevice = currentVideoDeviceInput.device
         sessionQueue.async {
@@ -169,6 +169,33 @@ public class CaptureSessionManager: NSObject {
             } else {
                 self.delegate?.captureSessionManager(self, didFailWithError: CaptureError.invalidDevice)
             }
+        }
+    }
+    
+    public func changeFlash(model: AVCaptureDevice.FlashMode) {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        guard device.hasFlash, device.isFlashAvailable else {
+            return
+        }
+        do {
+            try device.lockForConfiguration()
+            device.unlockForConfiguration()
+        } catch {
+            self.delegate?.captureSessionManager(self, didFailWithError: CaptureError.invalidDevice)
+        }
+    }
+    
+    public func changeTorch(model: AVCaptureDevice.TorchMode) {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        guard device.hasTorch, device.isTorchAvailable else {
+            return
+        }
+        do {
+            try device.lockForConfiguration()
+            device.torchMode = model
+            device.unlockForConfiguration()
+        } catch {
+            self.delegate?.captureSessionManager(self, didFailWithError: CaptureError.invalidDevice)
         }
     }
 }
