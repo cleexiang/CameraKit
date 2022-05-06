@@ -23,8 +23,7 @@ platform :ios do
       use_libraries: true,
       use_modular_headers: true,
       # 跳过验证 pod 是否可以导入
-      skip_import_validation: skipImportValidation,
-      sources: ["https://github.com/CocoaPods/Specs"]
+      skip_import_validation: skipImportValidation
     )
   end
 end
@@ -56,7 +55,6 @@ platform :ios do
       allow_warnings: true,
       # 跳过验证 pod 是否可以导入
       skip_import_validation: skipImportValidation,
-      sources: ["https://github.com/CocoaPods/Specs"],
       verbose: true
     )
   end
