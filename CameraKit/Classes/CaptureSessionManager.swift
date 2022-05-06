@@ -116,7 +116,7 @@ public class CaptureSessionManager: NSObject {
         captureSession.stopRunning()
     }
     
-    internal func capturePhoto() {
+    public func capturePhoto() {
         guard let connection = photoOutput.connection(with: .video), connection.isEnabled, connection.isActive else {
             delegate?.captureSessionManager(self, didFailWithError: CaptureError.invalidDevice)
             return
