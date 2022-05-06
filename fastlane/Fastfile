@@ -31,7 +31,7 @@ end
 
 platform :ios do
   desc "发布组件"
-  lane :deploy do
+  lane :deploy do |options|
     branch = options[:branch] || "main"
     project = "CameraKit"
     skipImportValidation = options[:skipImportValidation]
