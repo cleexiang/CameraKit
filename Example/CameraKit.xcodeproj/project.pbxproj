@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1E84D61F1BEB6036FBE5B06B /* Pods_CameraKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2961866A403A799186DCFC91 /* CameraKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CameraKit.podspec; path = ../CameraKit.podspec; sourceTree = "<group>"; };
+		2961866A403A799186DCFC91 /* CameraToolKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CameraToolKit.podspec; path = ../CameraToolKit.podspec; sourceTree = "<group>"; };
 		59AA70CB46122B1C9AD668B1 /* Pods_CameraKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* CameraKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,8 +41,8 @@
 		607FACE51AFB9204008FA782 /* CameraKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6B70CA482583C2C936EB0213 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7804A6AC4C9FB709FF235573 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6B70CA482583C2C936EB0213 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7804A6AC4C9FB709FF235573 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		87EBEF355F52393619B5CE8F /* Pods-CameraKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-CameraKit_Tests/Pods-CameraKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9E424EFF772F694B37258973 /* Pods-CameraKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-CameraKit_Example/Pods-CameraKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DC186054D8EBD4FB73A259EF /* Pods-CameraKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CameraKit_Tests/Pods-CameraKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				2961866A403A799186DCFC91 /* CameraKit.podspec */,
+				2961866A403A799186DCFC91 /* CameraToolKit.podspec */,
 				7804A6AC4C9FB709FF235573 /* README.md */,
 				6B70CA482583C2C936EB0213 /* LICENSE */,
 			);
@@ -156,7 +156,6 @@
 				DC186054D8EBD4FB73A259EF /* Pods-CameraKit_Tests.debug.xcconfig */,
 				87EBEF355F52393619B5CE8F /* Pods-CameraKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
