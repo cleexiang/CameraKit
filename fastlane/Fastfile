@@ -53,9 +53,7 @@ platform :ios do
     # sh("git fetch --tags")
     pod_push(
       path: "#{project}.podspec",
-      allow_warnings: true, 
-      use_libraries: true,
-      use_modular_headers: true,
+      allow_warnings: true,
       # 跳过验证 pod 是否可以导入
       skip_import_validation: skipImportValidation,
       sources: ["https://github.com/CocoaPods/Specs"],
